@@ -21,4 +21,5 @@ target 'MolaxArt' do
   #  post_install do |installer|
   #    flipper_post_install(installer)
   #  end
+
 end

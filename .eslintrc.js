@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
   ],
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -20,10 +21,13 @@ module.exports = {
     'react-native',
   ],
   rules: {
-    'react-native/no-unused-styles': 2,
-    'react-native/split-platform-components': 2,
-    'react-native/no-inline-styles': 2,
-    'react-native/no-color-literals': 2,
-    'react-native/no-raw-text': 2,
+    'max-classes-per-file': ['error', 100],
+    'react/jsx-filename-extension': 0,
+    'react/jsx-props-no-spreading': 0,
+    // 'react-native/no-unused-styles': 2,
+    // 'react-native/split-platform-components': 2,
+    // 'react-native/no-inline-styles': 2,
+    // 'react-native/no-color-literals': 2,
+    // 'react-native/no-raw-text': 2,
   },
 };
